@@ -34,7 +34,7 @@ export default function App(){
       <h1 style={{ textAlign: 'center', borderBottom: '1px solid #333', paddingBottom: '10px' }}>Post Dashboard</h1>
       <FilterForm filterText={filterText} onFilterChange={setFilterText} />
       {state.loading && <p style={{ textAlign: 'center', color: '#888' }}>Loading posts...</p>}
-      {state.error && <p style={{ color: '#ff6b6b', textAlign: 'center' }}>Hata: {state.error}</p>}
+      {state.error && <p style={{ color: '#ff6b6b', textAlign: 'center' }}>Error: {state.error}</p>}
       {!state.loading && !state.error && filteredPosts.length === 0 && <p style={{ textAlign: 'center', color: '#888' }}>No posts found.</p>}
       {!state.loading && !state.error && filteredPosts.length > 0 && <PostList posts={filteredPosts} />}
     </div>
