@@ -39,4 +39,4 @@ export default function App(){
       {!state.loading && !state.error && filteredPosts.length > 0 && <PostList posts={filteredPosts} />}
     </div>
   );
-}git add src/App.jsx
+}
